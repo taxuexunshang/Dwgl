@@ -1,0 +1,52 @@
+.mid_head {
+				color: #990099;
+				display: block;
+				margin-bottom: 20px;
+				margin-top: 20px;
+				width: 333px;
+			}
+			
+			.mid_ {
+				text-align: center;
+			}
+			.right_{
+				text-align: left;
+			}
+			
+			.mid_ p {
+				margin: 10px 0px;
+				display: inline-block;
+			}
+			.left_ p,.right_ p{
+				display: inline-block;
+				width: 300px;
+				margin-bottom: 90px;position: relative;
+				top: 200px;
+				
+			}
+			body{
+				max-width: 1170px;
+				min-width: 1170px;
+				width: 85%;
+				margin: 0 auto;
+			}
+			
+			
+			.left_ p{
+				text-align: right;
+				position: relative;
+				/*left: 43px;*/
+			}
+			.mid_,.left_,.right_{
+				width: 333px;
+				display: inline-block;
+				float: none;
+			}
+			.rdkc_page{
+				margin: 0 auto;	
+				text-align: center;
+			}
+			.page5_header{
+				position: relative;
+				left: 27px;
+				top: -12px;

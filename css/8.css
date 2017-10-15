@@ -1,0 +1,73 @@
+
+
+	body{
+		width: 85%;
+		max-width:1170px;
+		margin:0 auto;}
+	.a_piece_new img{
+		display:inline-block;
+		margin-right:20px;
+	}
+	.a_piece_new p{
+		display:inline-block;
+		width:667px;
+		height:160px;
+		position:relative;
+		text-align:left;
+		text-indent:2em;
+		top:27px;}
+	.new_content{
+	/*border-top:2px solid  rgb(202,28,29);*/
+	width: 1000px;
+	height: 700px;
+	margin-top: -50px;
+	overflow: hidden;
+		}
+	.a_piece_new{
+		margin:0 auto;
+		margin-top:-10px;
+
+		width:900px;
+		}
+	.xwzx span{
+		font-size:22px;
+	}
+	.page_8{
+		margin:0 auto;
+		text-align: center;
+		}
+	/*图片渐变*/
+	.page_8>.imgs{
+		width:1000px;
+		overflow: hidden;
+		margin:0 auto;
+	}
+	.imgs>.imgs_change{
+		position: relative;
+		float:left;
+	}
+	.imgs>.imgs_change>a:last-child{
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.imgs_change{
+	margin-bottom:10px;
+	}
+	.imgs>div:nth-child(2){
+		margin-right:10px;
+	}
+
+	.xwzx{
+		margin-top: -10px;
+		text-align: center;
+		float: right;
+		position: relative;
+		left: -86px;
+		}
+
+	.page5_header{
+		position: relative;
+		top: -12px;
+		left: 30px;
+	}

@@ -1,0 +1,30 @@
+.dyyyw_content {
+				border-top: 2px solid rgb(202, 28, 29);
+			}
+			
+			.dyyyw_content p {
+				font-size: 16px;
+				text-indent: 2em;
+				margin-bottom: 20px;
+			}
+			
+			body {
+				width: 85%;
+				max-width: 1170px;
+				margin: 0 auto;
+			}
+			
+			.dyyw>span {
+				font-size: 22px;
+				font-weight: bold;
+			}
+			
+			.dyyw {
+				/*margin-bottom: 30px;*/
+				display: inline-block;
+			}
+			
+			.page_7 {
+				padding: 0px 25px 0px 25px;
+				margin-top: -20px;
+			}

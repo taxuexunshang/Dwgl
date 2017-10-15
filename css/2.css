@@ -1,0 +1,27 @@
+.news-content {
+				border-top: 2px solid rgb(202, 28, 29);
+			}
+			
+			.new_content {
+				position: relative;
+				left: 35px;
+				line-height: 35px;
+				height: 350px;
+				overflow: hidden;
+			}
+			.menu_span{
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+				text-align: center;
+				display: inline-block;
+				background-color: #9D9D9D;
+			}
+			.menu_box{
+				position: relative;
+				top: -80px;
+				left: 500px;
+			}
+			.menu_span:hover{
+				background-color: white;
+				color: black;
