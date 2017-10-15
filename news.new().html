@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+			<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<style type="text/css">
+			.head_img h1 {
+				position: absolute;
+				top: 160px;
+				left: 570px;
+				z-index: 999;
+			}
+
+			.menu_box_sec a {
+				position: relative;
+				top: 10px;
+				/*left: 18px;*/
+			}
+			.menu_box_sec img{
+				margin-bottom:10px ;
+			}
+			.menu_box_sec {
+				display: inline-block;
+				margin-right: 190px;
+			}
+
+			.menu_box {
+				margin-top: 30px;
+				width: 1000px;
+				margin-left: 150px;
+			}
+
+			.new_content {
+				margin-top: 40px;
+				margin-bottom: 30px;
+				line-height: 35px;
+			}
+
+			.left_block,
+			.right_block {
+				display: inline-block;
+			}
+			.left_block{
+				margin-right: 140px;
+			}
+			body{
+				max-width: 1170px;
+				min-width: 1170px;
+				margin: 0 auto;
+				/*text-align: center;*/
+			}
+			.new_content ul{
+				text-align: left;
+				text-overflow: ellipsis;
+				list-style-type: circle;
+			}
+			.new_content ul li{
+				/*list-style-type: circle;*/
+				/*border-bottom: 1px solid grey;*/
+				width: 383px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.page_new{
+				text-align: center;
+				margin-top: -50px;}
+			.menu_span{
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+				text-align: center;
+				display: inline-block;
+				background-color: #9D9D9D;
+			}
+			.span_box{
+				position: relative;
+				top: -15px;
+				left: 520px;
+			}
+			.menu_span:hover{
+				background-color: white;
+				color: black;
+			}
+		</style>
+	</head>
+
+	<body style="overflow:Scroll;overflow-x:hidden">
+		<div class="container_1">
+
+			<header>
+				<div class="col-md-12 header_">
+					<img src="img/logo.png" class="my_photo_h" />
+					<img src="img/head1.png" style="height: 60px;" id="head_img">
+					<div class="dropdown person" style="float: right;clear: both;">
+						<p type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">hi,李四
+							<span class="caret"></span>
+						</p>
+						<span id=""><a href="#">退出登录</a></span>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<!-- <li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">个人信息</a>
+							</li> -->
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#myModal1">修改密码</a>
+							</li>
+
+						</ul>
+					</div>
+					<p class="text-right" id="header_right">深入开展共产党员先进性教育活动 切实加强党的建设</p>
+				</div>
+			</header>
+
+			<div class="header-nav">
+				<nav class="my_nav">
+					<div><a href="index.html">首页</a></div>
+					<div><a href="news.new().html" style="background-color:#fff;color:red;">新闻动态</a></div>
+					<div>
+						<a href="#">党章党史</a>
+						<div>
+							<div><a href="party_constitution.html">党章</a></div>
+							<div><a href="party_history.html">党史</a></div>
+						</div>
+					</div>
+					<div>
+						<a href="#">党务管理</a>
+						<div>
+							<div><a href="Party_membership_process.html">入党流程</a></div>
+							<div><a href="Party_members_duty.html">党员义务</a></div>
+						</div>
+					</div>
+					<div><a href="study.html">在线学习</a></div>
+					<div><a href="party_test.html">党课测试</a></div>
+					<div><a href="Project_based_Learning.html">专题教育</a></div>
+					<div><a href="userInfo.html">个人信息</a></div>
+				</nav>
+			</div>
+			<!-- 导航栏 -->
+<div class="page_new" style="wdi">
+		<div class="head_img">
+			<h1 style="color: #CC0000;">拓展新视野，新闻新动态</h1>
+			<img src="img/new4.png" width="1170px"/>
+		</div>
+		<div class="menu_box">
+			<div class="menu_box_sec">
+				<a href="###" onclick="ChangeNew(0)"><img src="img/公示公告3.png"/ height="100px" width="100px"><br/></a>
+				<a href="###" onclick="ChangeNew(0)">公示公告</a>
+			</div>
+			<div class="menu_box_sec">
+				<a href="###" onclick="ChangeNew(1)"><img src="img/省内新闻3.png" / height="100px" width="100px"><br/></a>
+				<a href="###" onclick="ChangeNew(1)">最新动态</a>
+			</div>
+			<div class="menu_box_sec">
+				<a href="###" onclick="ChangeNew(3)"><img src="img/时事新闻5.png" / height="100px" width="100px"><br/></a>
+				<a href="###" onclick="ChangeNew(3)">省内新闻</a>
+			</div>
+		</div>
+		<div class="new_content">
+			<div class="left_block">
+				<ul style="list-style: none;">
+
+					<li>
+						<a title="我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习" href="http://news.henu.edu.cn/info/1083/93663.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习</a>
+					</li>
+					<li>
+						<a title="我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军" href="http://news.henu.edu.cn/info/1083/93659.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军</a>
+					</li>
+					<li>
+						<a title="我校举办2017年河南省职业教育“双师型”教师培训开班典礼" href="http://news.henu.edu.cn/info/1083/93655.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校举办2017年河南省职业教育“双师型”教师培训开班典礼</a>
+					</li>
+					<li>
+						<a title="我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习" href="http://news.henu.edu.cn/info/1083/93663.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习</a>
+					</li>
+					<li>
+						<a title="我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军" href="http://news.henu.edu.cn/info/1083/93659.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right_block">
+				<ul style="list-style: none;">
+					<li>
+						<a title="我校喜获6项国家社科基金（教育学）项目立项" href="http://news.henu.edu.cn/info/1083/93684.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校喜获6项国家社科基金（教育学）项目立项
+						</a>
+
+					</li>
+
+					<li>
+						<a title="张振犁教授新书发布会暨新时期中原神话研究学术研讨会举行" href="http://news.henu.edu.cn/info/1083/93682.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 张振犁教授新书发布会暨新时期中原神话研究学术研讨会举行
+						</a>
+
+					</li>
+
+					<li>
+						<a title="棉花生物学国家重点实验室举办第三届“逆境生物学”夏令营" href="http://news.henu.edu.cn/info/1083/93681.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 棉花生物学国家重点实验室举办第三届“逆境生物学”夏令营
+						</a>
+
+						<li>
+							<a title="河南大学牵手双楼村，科教优势助推精准扶贫" href="http://news.henu.edu.cn/info/1083/93677.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 河南大学牵手双楼村，科教优势助推精准扶贫
+							</a>
+
+						</li>
+
+						<li>
+							<a title="第十一届运营与供应链管理国际会议举行" href="http://news.henu.edu.cn/info/1083/93675.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 第十一届运营与供应链管理国际会议举行
+							</a>
+
+						</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="new_content" style="display: none;">
+			<div class="left_block">
+				<ul style="list-style: none;">
+					<li>
+						<a title="我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习" href="http://news.henu.edu.cn/info/1083/93663.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习</a>
+					</li>
+					<li>
+						<a title="我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军" href="http://news.henu.edu.cn/info/1083/93659.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军</a>
+					</li>
+					<li>
+						<a title="我校举办2017年河南省职业教育“双师型”教师培训开班典礼" href="http://news.henu.edu.cn/info/1083/93655.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校举办2017年河南省职业教育“双师型”教师培训开班典礼</a>
+					</li>
+					<li>
+						<a title="我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习" href="http://news.henu.edu.cn/info/1083/93663.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习</a>
+					</li>
+					<li>
+						<a title="我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军" href="http://news.henu.edu.cn/info/1083/93659.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right_block">
+				<ul style="list-style: none;">
+					<li>
+						<a title="我校喜获6项国家社科基金（教育学）项目立项" href="http://news.henu.edu.cn/info/1083/93684.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校喜获6项国家社科基金（教育学）项目立项
+						</a>
+
+					</li>
+
+					<li>
+						<a title="张振犁教授新书发布会暨新时期中原神话研究学术研讨会举行" href="http://news.henu.edu.cn/info/1083/93682.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 张振犁教授新书发布会暨新时期中原神话研究学术研讨会举行
+						</a>
+
+					</li>
+
+					<li>
+						<a title="棉花生物学国家重点实验室举办第三届“逆境生物学”夏令营" href="http://news.henu.edu.cn/info/1083/93681.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 棉花生物学国家重点实验室举办第三届“逆境生物学”夏令营
+						</a>
+
+						<li>
+							<a title="河南大学牵手双楼村，科教优势助推精准扶贫" href="http://news.henu.edu.cn/info/1083/93677.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 河南大学牵手双楼村，科教优势助推精准扶贫
+							</a>
+
+						</li>
+
+						<li>
+							<a title="第十一届运营与供应链管理国际会议举行" href="http://news.henu.edu.cn/info/1083/93675.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 第十一届运营与供应链管理国际会议举行
+							</a>
+
+						</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="new_content" style="display: none;">
+			<div class="left_block">
+				<ul style="list-style: none;">
+					<li>
+						<a title="农工党河南大学委员会开展精准扶贫、送医送药下乡活动" href="http://news.henu.edu.cn/info/1083/93623.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 农工党河南大学委员会开展精准扶贫、送医送药下乡活动
+						</a>
+
+					</li>
+
+					<li>
+						<a title="2017年“看中国•外国青年影像计划”（河南行）活动启动" href="http://news.henu.edu.cn/info/1083/93597.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 2017年“看中国•外国青年影像计划”（河南行）活动启动
+						</a>
+
+						<li>
+							<a title="张宝明慰问我校暑期“三下乡”社会实践活动志愿者" href="http://news.henu.edu.cn/info/1083/93595.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 张宝明慰问我校暑期“三下乡”社会实践活动志愿者
+							</a>
+
+							<li>
+								<a title="2017“发现故乡，见证中国”暑期社会实践活动正式启动" href="http://news.henu.edu.cn/info/1083/93589.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 2017“发现故乡，见证中国”暑期社会实践活动正式启动
+								</a>
+
+							</li>
+
+							<li>
+								<a title="我校健儿在全省“华光”大学生武术锦标赛中荣获佳绩" href="http://news.henu.edu.cn/info/1083/93587.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校健儿在全省“华光”大学生武术锦标赛中荣获佳绩
+								</a>
+
+							</li>
+				</ul>
+			</div>
+			<div class="right_block">
+				<ul style="list-style: none;">
+					<li>
+						<a title="我校被河南省人社厅、教育厅认定为河南省职业教育“双师型”教师培养培训基地" href="http://news.henu.edu.cn/info/1083/93586.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校被河南省人社厅、教育厅认定为河南省职业教育“双师型”教师培养培训基地
+						</a>
+						<li>
+							<a title="2017河南省两岸青年交流月暨第四届台湾大学生“中原文化之旅——汉字起源”夏令营活动在我校启动" href="http://news.henu.edu.cn/info/1083/93581.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 2017河南省两岸青年交流月暨第四届台湾大学生“中原文化之旅——汉字起源”
+							<li>
+								<a title="校医院组织党员赴潭头开展党课教育活动" href="http://news.henu.edu.cn/info/1083/93579.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 校医院组织党员赴潭头开展党课教育活动
+									<span id="dynclicks_u9_93579" name="dynclicks_u9_93579">
+								</a>
+							</li>
+							<li>
+								<a title="我校2017年国家社科基金年度项目立项跻身全国前七" href="http://news.henu.edu.cn/info/1083/93578.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校2017年国家社科基金年度项目立项跻身全国前七
+								<li>
+									<a title="国立河南大学抗战时期潭头办学纪念馆新馆开馆" href="http://news.henu.edu.cn/info/1083/93577.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 国立河南大学抗战时期潭头办学纪念馆新馆开馆
+									</a>
+									<li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="new_content" style="display: none;">
+			<div class="left_block">
+				<ul style="list-style: none;">
+					<li>
+						<a title="我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习" href="http://news.henu.edu.cn/info/1083/93663.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习></a>
+					</li>
+					<li>
+						<a title="我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军" href="http://news.henu.edu.cn/info/1083/93659.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军</a>
+					</li>
+					<li>
+						<a title="我校举办2017年河南省职业教育“双师型”教师培训开班典礼" href="http://news.henu.edu.cn/info/1083/93655.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校举办2017年河南省职业教育“双师型”教师培训开班典礼</a>
+					</li>
+					<li>
+						<a title="我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习" href="http://news.henu.edu.cn/info/1083/93663.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校洛阳中小学美术骨干教师培训班赴朱仙镇兰考学习</a>
+					</li>
+					<li>
+						<a title="我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军" href="http://news.henu.edu.cn/info/1083/93659.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校甲组男排在河南省第十五届大学生​排球比赛中斩获亚军</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right_block">
+				<ul style="list-style: none;">
+					<li>
+						<a title="我校喜获6项国家社科基金（教育学）项目立项" href="http://news.henu.edu.cn/info/1083/93684.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 我校喜获6项国家社科基金（教育学）项目立项
+						</a>
+
+					</li>
+
+					<li>
+						<a title="张振犁教授新书发布会暨新时期中原神话研究学术研讨会举行" href="http://news.henu.edu.cn/info/1083/93682.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 张振犁教授新书发布会暨新时期中原神话研究学术研讨会举行
+						</a>
+
+					</li>
+
+					<li>
+						<a title="棉花生物学国家重点实验室举办第三届“逆境生物学”夏令营" href="http://news.henu.edu.cn/info/1083/93681.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 棉花生物学国家重点实验室举办第三届“逆境生物学”夏令营
+						</a>
+
+						<li>
+							<a title="河南大学牵手双楼村，科教优势助推精准扶贫" href="http://news.henu.edu.cn/info/1083/93677.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 河南大学牵手双楼村，科教优势助推精准扶贫
+							</a>
+
+						</li>
+
+						<li>
+							<a title="第十一届运营与供应链管理国际会议举行" href="http://news.henu.edu.cn/info/1083/93675.htm" target="_self"><i class="fa fa-coffee" aria-hidden="true"></i> 第十一届运营与供应链管理国际会议举行
+							</a>
+
+						</li>
+				</ul>
+			</div>
+
+		</div>
+		</div>
+		<div class="span_box">
+				<span class="menu_span" style="background-color: white;color: black;"><a href="###">1</a></span>
+				<span class="menu_span"><a href="###">2</a></span>
+				<span class="menu_span"><a href="###">3</a></span>
+				<span class="menu_span"><a href="###">4</a></span>
+			</div>
+		<div id="block_5_1">
+			<p>(c) Copyright 2017 Administrator. All Rights Reserved.
+				<br />欢迎关注微信公众号</p>
+				</div>
+
+				<!--修改密码模态框-->
+
+				<!-- 模态框（Modal1） -->
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改密码</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form-horizontal">
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label"></label>
+						<div class="col-sm-8 _password">
+							原密码:<input type="password" class="form-control" class="inputPassword3">
+						</div>
+					</div>
+
+					<div class="form-group _password">
+						<label for="inputPassword3" class="col-sm-2 control-label"></label>
+						<div class="col-sm-8">
+							新密码:<input type="password" class="form-control" class="inputPassword3">
+						</div>
+					</div>
+
+					<div class="form-group _password">
+						<label for="inputPassword3" class="col-sm-2 control-label"></label>
+						<div class="col-sm-8">
+							再次输入新密码:<input type="password" class="form-control" class="inputPassword3">
+						</div>
+					</div>
+
+
+				</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary">提交</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+</div>
+	</body>
+	<script type="text/javascript">
+		 var block_ = document.getElementsByClassName("new_content");
+		 function ChangeNew(obj){
+		 for(var i=0;i<4;i++)
+		 {
+		 	block_[i].style.display="none"
+		 }
+		 block_[obj].style.display="block"
+		 }
+	</script>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>

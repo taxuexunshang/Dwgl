@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/3.css" />
+		<style type="text/css">
+			.btn_group {
+				position: relative;
+				top: 20px;
+				left: -5px;
+			}
+			
+			._password {
+				text-align: right;
+				position: relative;
+				left: -65px;
+			}
+			.mtk_btn{
+				position: relative;
+				top: -300px;
+				left: 430px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<header>
+				<div class="col-md-12 header_">
+					<img src="img/logo.png" class="my_photo_h" />
+					<img src="img/head1.png" style="height: 60px;" id="head_img">
+					<div class="dropdown person" style="float: right;clear: both;">
+						<p type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">hi,李四
+							<span class="caret"></span>
+						</p>
+						<span id=""><a href="#">退出登录</a></span>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<!-- <li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">个人信息</a>
+							</li> -->
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#myModal1">修改密码</a>
+							</li>
+
+						</ul>
+					</div>
+					<p class="text-right" id="header_right">深入开展共产党员先进性教育活动 切实加强党的建设</p>
+				</div>
+			</header>
+
+			<div class="header-nav">
+				<nav class="my_nav">
+					<div>
+						<a href="index.html">首页</a>
+					</div>
+					<div>
+						<a href="news.new().html">新闻动态</a>
+					</div>
+					<div>
+						<a href="#">党章党史</a>
+						<div>
+							<div>
+								<a href="party_constitution.html">党章</a>
+							</div>
+							<div>
+								<a href="party_history.html">党史</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a href="#">党务管理</a>
+						<div>
+							<div>
+								<a href="Party_membership_process.html">入党流程</a>
+							</div>
+							<div>
+								<a href="Party_members_duty.html">党员义务</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a href="study.html">在线学习</a>
+					</div>
+					<div>
+						<a href="party_test.html">党课测试</a>
+					</div>
+					<div>
+						<a href="Project_based_Learning.html">专题教育</a>
+					</div>
+					<div>
+						<a href="userInfo.html" style="background-color:#fff;color:red;">个人信息</a>
+					</div>
+				</nav>
+			</div>
+
+			<!--<div class="page5_header">当前位置:<a href="#">个人信息</a>>><a href="#">内容浏览</a></div>-->
+
+			<div class="person_message">
+				<div class="person_left_message">
+					<img src="img/河南大学_files/weixinimg.jpg" />
+					<p>账号：15102523333</p>
+				</div>
+
+				<div class="text_message">
+					<p>姓名：李四</p>
+					<p>性别：男</p>
+					<p>民族：汉</p>
+					<p>籍贯：河南省你你你</p>
+					<p>最高学历：xxxxxx</p>
+				</div>
+
+				<div class="text_message">
+
+					<p>入党状态：发展对象</p>
+					<p>身份证号：xxxxxx</p>
+					<p>出生日期：xxxxxx</p>
+					<p>入党日期：xxxxxx</p>
+					<p>家庭住址：xxxxxx</p>
+				</div>
+				<button class="change_bto btn btn-primary" data-toggle="modal" data-target="#myModal">修改信息</button>
+			</div>
+
+			<div class="table_group">
+				<table class="table table-bordered">
+					<tr class="table_th">
+						<th colspan="10">基本信息</th>
+					</tr>
+					<tr class="table_sed">
+						<td>姓名</td>
+						<td>性别</td>
+						<td>民族</td>
+						<td>籍贯</td>
+						<td>出生日期</td>
+						<td>申请入党日期</td>
+						<td>列为积极分子日期</td>
+						<td>最高学历</td>
+						<td>岗位类型</td>
+						<td>岗位名称</td>
+					</tr>
+					<tr>
+						<td>xx</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<!--第一行列表-->
+
+				<table class="table table-bordered">
+					<tr class="table_th">
+						<th colspan="7">学位学历</th>
+
+					</tr>
+					<tr class="table_sed">
+						<td>教育类别</td>
+						<td>学历</td>
+						<td>入学时间</td>
+						<td>毕业时间</td>
+						<td>学位</td>
+						<td>学位授予日期</td>
+						<td>毕业院校</td>
+					</tr>
+					<tr>
+						<td>xx</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<!--第二行列表-->
+
+				<table class="table table-bordered">
+					<tr class="table_th">
+						<th colspan="5">工作岗位</th>
+					</tr>
+					<tr class="table_sed">
+						<td>开始日期</td>
+						<td>结束日期</td>
+						<td>工作岗位</td>
+						<td>一线情况</td>
+						<td>主要岗位</td>
+					</tr>
+					<tr>
+						<td>xx</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<!--第三行列表-->
+				<table class="table table-bordered">
+					<tr class="table_th">
+						<th colspan="8">党政职务</th>
+					</tr>
+					<tr class="table_sed">
+						<td>任职党组织</td>
+						<td>任职机构</td>
+						<td>职务名称</td>
+						<td>职务说明</td>
+						<td>职务级别</td>
+						<td>批注任职日期</td>
+						<td>批准免职日期</td>
+						<td>主要职务</td>
+					</tr>
+					<tr>
+						<td>xx</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<!-- 第四列列表 -->
+				<table class="table table-bordered">
+					<tr class="table_th">
+						<th colspan="6">技术职务</th>
+					</tr>
+					<tr class="table_sed">
+						<td>专业技术资格</td>
+						<td>获得资格日期</td>
+						<td>专业技术职务</td>
+						<td>聘任起始日期</td>
+						<td>聘任终止日期</td>
+						<td>主要职务</td>
+					</tr>
+					<tr>
+						<td>xx</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<!-- 第五行列表 -->
+				<table class="table table-bordered">
+					<tr class="table_th">
+						<th colspan="7">奖惩信息</th>
+					</tr>
+					<tr class="table_sed">
+						<td>奖惩名称</td>
+						<td>奖惩说明</td>
+						<td>奖惩原因</td>
+						<td>批准机关</td>
+						<td>批准机关级别</td>
+						<td>批准日期</td>
+						<td>撤销日期</td>
+					</tr>
+					<tr>
+						<td>xx</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<!-- 第六行列表 -->
+			</div>
+
+			<div id="block_5_1">
+				<p>(c) Copyright 2017 Administrator. All Rights Reserved.
+					<br />欢迎关注微信公众号</p>
+			</div>
+			<!-- 页面内容 -->
+
+			<!-- 模态框（Modal） -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改信息</h4>
+						</div>
+						<div class="modal-body">
+							<ul id="myTab" class="nav nav-tabs">
+								<li class="active">
+									<a href="#home" data-toggle="tab">
+										基本信息
+									</a>
+								</li>
+								<li>
+									<a href="#ios" data-toggle="tab">学位学历</a>
+								</li>
+								<li>
+									<a href="#gzgw" data-toggle="tab">工作岗位</a>
+								</li>
+								<li>
+									<a href="#dzzw" data-toggle="tab">党政职务</a>
+								</li>
+								<li>
+									<a href="#jszw" data-toggle="tab">技术职务</a>
+								</li>
+								<li>
+									<a href="#jcxx" data-toggle="tab">奖惩信息</a>
+								</li>
+							</ul>
+							<div id="myTabContent" class="tab-content">
+								<div class="tab-pane fade in active" id="home">
+									<form>
+										<ul class="mtk_">
+											<li>用户名:<input type="text" name="" value="" disabled class="form-control"></li>
+											<!-- <li>密码:<input type="password" name="" value=""></li> -->
+											<li>性别:<input type="text" name="" value="" class="form-control"></li>
+											<li>民族:<input type="text" name="" value="" class="form-control"></li>
+											<li>籍贯:<input type="text" name="" value="" class="form-control"></li>
+											<li>出生日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>申请日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>列为积极分子日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>入党状态:<input type="text" name="" value="" class="form-control"></li>
+											<li>最高学历:<input type="text" name="" value="" class="form-control"></li>
+										</ul>
+									</form>
+								</div>
+								<!-- 基本信息标签页 -->
+								<div class="tab-pane fade" id="ios">
+									<form>
+										<ul class="mtk_">
+											<li>教育类别:<input type="text" name="" value="" class="form-control"></li>
+											<li>学历:<input type="text" name="" value="" class="form-control"></li>
+											<li>入学时间:<input type="text" name="" value="" class="form-control"></li>
+											<li>毕业日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>学位:<input type="text" name="" value="" class="form-control"></li>
+											<li>学位授予日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>毕业院校:<input type="text" name="" value="" class="form-control"></li>
+										</ul>
+									</form>
+								</div>
+								<!-- 学位学历标签页 -->
+								<div class="tab-pane fade" id="gzgw">
+									<form>
+										<ul class="mtk_">
+											<li>开始日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>结束日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>工作岗位:<input type="text" name="" value="" class="form-control"></li>
+											<li>一线情况:<input type="text" name="" value="" class="form-control"></li>
+											<li>主要岗位:<input type="text" name="" value="" class="form-control"></li>
+										</ul>
+									</form>
+								</div>
+								<!-- 工作岗位标签页 -->
+								<div class="tab-pane fade" id="dzzw">
+									<form>
+										<ul class="mtk_">
+											<li>任职党组织:<input type="text" name="" value="" class="form-control"></li>
+											<li>任职机构:<input type="text" name="" value="" class="form-control"></li>
+											<li>职务名称:<input type="text" name="" value="" class="form-control"></li>
+											<li>职务说明:<input type="text" name="" value="" class="form-control"></li>
+											<li>职务级别:<input type="text" name="" value="" class="form-control"></li>
+											<li>批准任职日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>批准免职日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>主要职务:<input type="text" name="" value="" class="form-control"></li>
+										</ul>
+									</form>
+								</div>
+								<!-- 党政职务标签页 -->
+								<div class="tab-pane fade" id="jszw">
+									<form>
+										<ul class="mtk_">
+											<li>专业技术资格:<input type="text" name="" value="" class="form-control"></li>
+											<li>获得资格日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>专业技术职务:<input type="text" name="" value="" class="form-control"></li>
+											<li>聘任起始日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>聘任终止日期:<input type="text" name="" value="" class="form-control"></li>
+											<li>主要职务:<input type="text" name="" value="" class="form-control"></li>
+										</ul>
+									</form>
+								</div>
+								<!-- 技术职务标签页 -->
+								<div class="tab-pane fade" id="jcxx">
+									<div class="btn_group " style="text-align: right;">
+									</div>
+									<div class="clone-wrapper">
+										<div class="toclone ">
+											<form>
+											<ul class="mtk_">
+												<li>奖惩名称:<input type="text" name="" value="" class="form-control"></li>
+												<li>奖惩说明:<input type="text" name="" value="" class="form-control"></li>
+												<li>奖惩原因:<input type="text" name="" value="" class="form-control"></li>
+												<li>批准机关:<input type="text" name="" value="" class="form-control"></li>
+												<li>批准机关级别:<input type="text" name="" value="" class="form-control"></li>
+												<li>批准日期:<input type="text" name="" value="" class="form-control"></li>
+												<li>撤销日期:<input type="text" name="" value="" class="form-control"></li>
+											</ul>
+											</form>
+											<button class="btn btn-primary clone mtk_btn">增加</button>
+											<button class="btn btn-danger delete mtk_btn">删除</button>
+										</div>
+										
+									</div>
+								</div>
+								<!-- 奖惩信息标签页 -->
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary " id="submit" onclick="ala()">提交更改</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+
+			</div>
+			<!--修改密码模态框-->
+
+			<!-- 模态框（Modal1） -->
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改密码</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="inputEmail3" class="col-sm-2 control-label"></label>
+									<div class="col-sm-8 _password">
+										原密码:<input type="password" class="form-control" class="inputPassword3">
+									</div>
+								</div>
+
+								<div class="form-group _password">
+									<label for="inputPassword3" class="col-sm-2 control-label"></label>
+									<div class="col-sm-8">
+										新密码:<input type="password" class="form-control" class="inputPassword3">
+									</div>
+								</div>
+
+								<div class="form-group _password">
+									<label for="inputPassword3" class="col-sm-2 control-label"></label>
+									<div class="col-sm-8">
+										再次输入新密码:<input type="password" class="form-control" class="inputPassword3">
+									</div>
+								</div>
+
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary">提交</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+
+		</div>
+	</body>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-cloneya.js"></script>
+	<!--<script src="js/duplicateElement.min.js" type="text/javascript"></script>-->
+
+	<script type="text/javascript">
+		function ala() {
+			alert("提交成功");
+		}
+	</script>
+
+	<script type="text/javascript">
+		$('.clone-wrapper ').cloneya();
+	</script>
+
+</html>
